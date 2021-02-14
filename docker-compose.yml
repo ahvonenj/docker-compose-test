@@ -3,8 +3,8 @@ version: '3.7'
 services:
   web:
     container_name: web
-    build: ./
+    build: ./web-service
     volumes:
-      - ./src:/var/www/html
+      - ./web-service/src/:/var/www/html
     ports:
       - 80:80
